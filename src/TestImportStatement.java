@@ -7,13 +7,13 @@ import java.util.Date;
 public class TestImportStatement {
     public static void main(String[] args)
     {
-        Calendar calendar = Calendar.getInstance();
+        Calendar mycalendar = Calendar.getInstance();
 
-        calendar.set(2018, Calendar.MAY, 5);
-        Date firstDate = calendar.getTime();
+        mycalendar.set(2018, Calendar.MAY, 5);
+        Date firstDate = mycalendar.getTime();
 
-        calendar.set(2018, Calendar.MAY, 1);
-        Date secondDate = calendar.getTime();
+        mycalendar.set(2018, Calendar.MAY, 1);
+        Date secondDate = mycalendar.getTime();
 
         System.out.println("Is firstDate before secondDate? " + firstDate.before(secondDate));
         System.out.println("Is firstDate after secondDate? " + firstDate.after(secondDate));
